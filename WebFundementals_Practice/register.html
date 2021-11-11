@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <form>
+        <h1>Regitration Form</h1>
+        <input type="text" placeholder="User Name" pattern="[A-Za-z]*" required>
+        <input type="text" placeholder="abc@gmail.com" pattern="[a-zA-Z0-9_\-\.]+[@][a-z]+[\.][a-z]{2,3}" required>
+        <input type="number" placeholder="Enter Phone Number" pattern="[0-9]{10}"required>
+        <input type="password" placeholder="Enter Password" required>
+        <input type="password" placeholder="Confirm Password" required>
+        <p >Already have an account?</p>
+        <a href="login.html">Click here to login</a>
+        <button type="submit">Register</button><button type="reset">Reset!</button>
+        
+    </form>
+</body>
+</html>
