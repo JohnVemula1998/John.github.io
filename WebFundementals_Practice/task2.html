@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="task2.css" />
+  </head>
+  <body>
+    <div>
+      <h2>Form</h2>
+      <form>
+        <input class="input1" type="text" placeholder="User Name" required />
+        <input
+          class="input1"
+          type="text"
+          placeholder="Phone Number"
+          pattern="\9[0-9]+"
+          minlength="10"
+          required
+        />
+        <input
+          class="input1"
+          type="email"
+          placeholder="Enter Your Gmail"
+          required
+        />
+        <input
+          class="input1"
+          type="password"
+          placeholder="Enter Password"
+          maxlength="8"
+          required
+        />
+        <p>Select Option of Your Gender</p>
+        <input type="checkbox" checked /><span>Male</span><br>
+        <input type="checkbox" /><span>Female</span><br>
+        <input type="checkbox" /><span>Others</span><br>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

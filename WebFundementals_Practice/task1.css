@@ -1,0 +1,16 @@
+div{
+    margin-top: 175px;
+    margin-left:40% ;
+}
+img{
+    height: 300px;
+    width: 400px;;
+}
+h2{
+    margin-left: 25px;
+    text-transform: capitalize;
+    color: #0f40f2;
+}
+body{
+    background-color: #97f7b1;
+}
