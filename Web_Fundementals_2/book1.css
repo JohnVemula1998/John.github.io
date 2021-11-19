@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,400;1,500;1,600;1,700;1,800&display=swap');
+*{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #CFF6CF;
+      
+} 
+div{
+    margin-top: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+}
+button:hover,a:hover{
+    font-size: 25px;
+    color: #FF0000;
+}
+p:hover{
+    color: #2C2891;
+}
+button{
+    margin-top: 30px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+a{
+    text-decoration: none;
+}
