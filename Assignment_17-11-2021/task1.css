@@ -1,0 +1,17 @@
+.circle{
+    height: 0;
+    width: 0;
+    background-color: aqua;
+    border: 200px solid black;
+    border-top-color:#51b5a9;
+    border-left-color:#f7f3d7;
+    border-right-color: #fade8b;
+    border-bottom-color:#e3516e ;
+    border-radius: 50%;
+    margin-top: 200px;
+    margin-left:41%;
+}
+.circle { transform: rotate(310deg) }
+body{
+    background-color: #e3516e;
+}
