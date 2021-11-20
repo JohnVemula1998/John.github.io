@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,400;1,500;1,600;1,700;1,800&family=UnifrakturCook:wght@700&display=swap');
+body{
+    background-color: honeydew;
+}
+.header{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.hd1{
+    display: flex;
+    justify-content: start;
+    width:150px;
+    height: 70px;
+    display: flex;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 13px;
+    
+}
+.hd2{
+    height: 70px;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 55px;
+    margin-top: -110px;
+}
+
+.hd3{
+    text-align: center;
+    font-size: 13px;
+    width: 200px;
+    height: 70px;
+
+}
+.date{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.main_heading{
+    margin-top: 0px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 70px;
+
+}.after_main_heading{
+    width: 50%;
+    margin-top: 0px;
+}.sub_heading{
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 35px;
+}
+.image1{
+    margin-left: 20px;
+    height: 350px;
+    width: 700px;
+}
+.container_1{
+    display: flex;
+    gap: 10px;
+}
+.subcontainer_1-1 > p{
+    font-size: 10px;
+}
+#subcontainer_1-2{
+text-align: center;
+margin-left: 170px;
+margin-right: 170px;
+    
+}
+.subheading1.2{
+    width: 20%
+
+}
+.subcontainer_2{
+ display: flex;
+}
+.subheading_2_1{
+    width: 170px
+}
+.vl{
+    border-left: 2px solid grey; 
+    height: 1350px;
+}
+.container3,.container4{
+    display: flex;
+}
+.container4_2,.container3_3,.container3_2,.container4_3, .container3_1,.container4_1{
+    width: 170px;
+    margin-left: 5px;
+}
+
+.vl2{
+    margin-left: 20px;
+    border-left: 2px solid grey;
+    height: 500px;
+}
+.vl3{
+    margin-left: 20px;
+    border-left: 2px solid grey;
+    height: 630px;
+}
+.subheading5_1,.subheading7_1{
+    text-align: center;
+    margin-left: 95px;
+    margin-right: 95px;
+}
+
+.container5,.container6,.container7{
+    display: flex;
+    margin-left: 50px;
+}
+.container5_1,.container6_1,.container7_1{
+    width: 350px;
+}
+.container5_2,.container6_2,.container7_2{
+    width: 350px;
+    margin-left:20px ;
+}
+

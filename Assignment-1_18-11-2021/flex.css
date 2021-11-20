@@ -1,0 +1,13 @@
+*{
+    background-color:#DADDFC ;
+}
+body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+}
