@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Todo List</h1>
+    <script>
+        var todo = [1,2,5,4];
+        //function to add  elements
+        function add_todo_item(index,new_item) {
+            todo.splice(index,0,new_item);
+        }
+        //Function to show elements of array
+        function show_list() {
+            for(var i = 0; i < todo.length; i = i + 1) {
+                console.log(todo[i]);
+            }
+        }
+        //function to edit elements.
+        function edit_array(index,edit_element){
+            todo[index]=edit_element;    
+        }
+        //function to mark item as done.
+        function markDone(index){
+            console.log(todo[index]+"✔");
+        }
+        //function to delete 1 element from array.
+        function delete_element(index){
+            todo.splice(index,1);
+        }
+
+        edit_array(2,3);
+        
+        //markDone(2);
+        add_todo_item(0,5);
+        show_list();
+
+
+    </script>
+</body>
+</html>
