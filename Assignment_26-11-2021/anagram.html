@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Anagram</h1>
+    <script>
+        var string1 =prompt("Enter string1");
+        var string2 = prompt("Enter String2");
+        var str1= string1.split("").sort().join("");
+        var str2= string2.split("").sort().join("");
+        if(str1.length!=str2.length){
+            console.log("Enter Valid strings");
+        }else if(str1==str2){
+            console.log("Strings are Anagrams");
+        }else{
+            console.log("Strings are not Anagrams ")
+        }
+    </script>
+</body>
+</html>
