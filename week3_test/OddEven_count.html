@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+      <h1>Odd Even Number Count</h1>
+    <script>
+      var number = prompt("Enter more than one Digit");
+      var array = number.split("");
+      var Odd_Count = 0;
+      var Event_Count = 0;
+      for (var i = 0; i < array.length; i++) {
+        array[i] = parseInt(array[i]);
+        if (array[i] % 2 == 0) {
+          Event_Count += array[i];
+        } else {
+          Odd_Count += array[i];
+        }
+      }
+      console.log("Even Number count is: " + Event_Count);
+      console.log("Odd Number Count is: " + Odd_Count);
+    </script>
+  </body>
+</html>
