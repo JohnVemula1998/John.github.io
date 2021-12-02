@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>KBC Question and Answers</h1>
+    <script>
+      var kbc = {
+        questions: [
+          "1. Who is the first of president of India ?",
+          "2.Who is the first Prime-Minister of India ?",
+          "3.Who is the father of ISRO ?",
+          "4.Who is the Father of Modern India ?",
+          "5.Who is the father of Indian Cricket ?",
+        ],
+        options: [
+          "A-> Rajendra Prasad B-> Sarvepalli Radhakrishnan C-> Mohammad Hidayatullah D-> V. V. Giri",
+          "A-> Gulzarilal Nanda B-> Lal Bahadur Shastri  C-> Jawahar Lal Nehru D-> Morarji Desai",
+          "A-> Satish Dhawan B-> M. G. K. Menon C-> A. P. J. Abdul Kalam  D-> Vikram Sarabhai",
+          "A-> Mahatma Gandhi B-> Sardar Vallabhbhai Patel C-> Raja Ram Mohan Roy D-> Subhas Chandra Bose",
+          "A-> Ranjitsinhji Vibhaji Jadeja B-> C.K.Nayudu C-> Kapil Dev D-> Gundappa Viswanath",
+        ],
+        answers: [
+          "Rajendra Prasad",
+          "Jawahar Lal Nehru",
+          "Vikram Sarabhai",
+          "Raja Ram Mohan Roy",
+          "Ranjitsinhji Vibhaji Jadeja",
+        ],
+        correct_options: ["A", "C", "D", "C", "A"],
+        winning_prize: ["One Thousand", "Fifty Thouusand","Ten Lakhs", "Sixty Lakhs","One Crore"],
+
+        Enter_the_game: function () {
+          for (var i = 0; i < this.questions.length; i++) {
+            console.log(this.questions[i]);
+            console.log(this.options[i]);
+            var correct_Option = prompt("Enter the Correct Option");
+            let Option = correct_Option.toUpperCase();
+            if (Option == this.correct_options[i]) {
+              console.log(
+                "Congratulations you Have Won " +
+                  this.winning_prize[i] +
+                  " Indian Rupees"
+              );
+            } else {
+              console.log(
+                "Well try Better Luck Next Time! correct Answer is " +
+                  this.correct_options[i] +
+                  ":" +
+                  this.answers[i]
+              );
+              if(i>=2){
+                console.log("Your Winning Amount is Fifty Thousand Indian Rupees");
+              }else{
+                console.log("Sorry to say this! Your Winning Amount is Zero!")
+              }
+              break;
+            }
+          }
+        },
+      };
+      kbc.Enter_the_game();
+    </script>
+  </body>
+</html>
