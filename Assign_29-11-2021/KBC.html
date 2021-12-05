@@ -32,9 +32,17 @@
           "Ranjitsinhji Vibhaji Jadeja",
         ],
         correct_options: ["A", "C", "D", "C", "A"],
-        winning_prize: ["One Thousand", "Fifty Thouusand","Ten Lakhs", "Sixty Lakhs","One Crore"],
+        winning_prize: [
+          "One Thousand",
+          "Fifty Thouusand",
+          "Ten Lakhs",
+          "Sixty Lakhs",
+          "One Crore",
+        ],
 
         Enter_the_game: function () {
+          var enter = prompt("Are you ready for the KBC game: Yes/No")
+          if(enter == "Yes"){ 
           for (var i = 0; i < this.questions.length; i++) {
             console.log(this.questions[i]);
             console.log(this.options[i]);
@@ -53,17 +61,24 @@
                   ":" +
                   this.answers[i]
               );
-              if(i>=2){
-                console.log("Your Winning Amount is Fifty Thousand Indian Rupees");
-              }else{
-                console.log("Sorry to say this! Your Winning Amount is Zero!")
+              if (i >= 2) {
+                console.log(
+                  "Your Winning Amount is Fifty Thousand Indian Rupees"
+                );
+              } else {
+                console.log("Sorry to say this! Your Winning Amount is Zero!");
               }
               break;
             }
           }
+        }else{
+      console.log("Try when you are ready");
+    }
         },
       };
-      kbc.Enter_the_game();
+      
+    
+    kbc.Enter_the_game();
     </script>
   </body>
 </html>
