@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@1,400;1,500;1,600;1,700;1,800&family=Ubuntu&family=UnifrakturCook:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@1,400;1,500;1,600;1,700;1,800&family=Roboto&family=UnifrakturCook:wght@700&display=swap');
+form{
+    background: hsla(152, 100%, 50%, 1);
+
+background: linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(152, 100%, 50%, 1) 0%, hsla(186, 100%, 69%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#00FF87", endColorstr="#60EFFF", GradientType=1 );
+}
+body{
+    background: hsla(197, 100%, 63%, 1);
+
+background: linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(197, 100%, 63%, 1) 0%, hsla(294, 100%, 55%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#40C9FF", endColorstr="#E81CFF", GradientType=1 );
+}
+form{
+    margin-left: 300px;
+    margin-right: 300px;
+    border-radius: 10px;
+}
+#head{
+margin-top: 20px;
+border: 2px solid;
+border-radius: 10px;
+background-color:#0d1014;
+}
+h1{
+    font-family: 'Ubuntu', sans-serif;
+    color: #0739f8;
+    text-align: center;
+}
+h1:hover{
+    color: #f50505;
+}
+
+#date{
+    width: 165px;
+}
+.container1 > input{
+    width: 300px;
+    margin: 5px;
+    height: 30px;
+}
+.container1 > select {
+    width: 310px;
+    height: 30px;
+    margin-left: 7px;
+}
+.container1 > textarea {
+   display: block; 
+   margin: 5px;
+   margin-left: 15px;
+   width: 90%;
+}
+.container1,.container2,.container3,.container4{
+    margin-left: 130px;
+    margin-right:100px ;
+}
+.container2 > select {
+    width: 310px;
+    height: 30px;
+    margin-left: 7px;
+}
+.container2 > input{
+    width: 300px;
+    margin: 5px;
+    height: 30px;
+}
+.container3 > p{
+    font-family: 'Roboto', sans-serif;
+}
+
+h3{
+    margin: 0.5em, 4px;
+    font-family: 'Roboto', sans-serif;
+    color: #068005;
+    text-align: center;
+}

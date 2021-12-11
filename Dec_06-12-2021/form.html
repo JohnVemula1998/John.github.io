@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form.css" />
+    <title>Submission Form</title>
+  </head>
+  <body>
+    <form>
+    <div id="head">
+    <h1>Admission Form for Geekster</h1>
+  </div>
+  <h3>Personal Info</h3>
+    <div class="container1">
+      <input type="text" placeholder="First Name" required />
+      <input type="text" placeholder="Last Name" />
+      <br>
+      <input type="email" placeholder="abc@gmail.com" required />
+      <input type="tel" placeholder="Phone Number" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" required title="Please enter in 1111-111-111 format"/>
+    <br>
+    <input  type="date" name="date_of_birth" max="2022-01-01"/>
+    <select name="gender">
+      <option selected disabled>Select Gender</option>
+      <option>Male</option>
+      <option>Female</option>
+      <option>Other</option>
+  </select> 
+  <textarea name="address" placeholder="Address"></textarea> 
+  </div>
+  <hr>
+  <h3>Educational Details</h3>
+  <div class="container2">
+    <select name="degree">
+      <option selected disabled>Select Degree</option>
+      <optgroup label="Bachelors">
+          <option>B. Tech</option>
+          <option>B.E.</option>
+          <option>B. Sc.</option>
+      </optgroup>
+      <optgroup label="Masters">
+          <option>M. Tech</option>
+          <option>M.E.</option>
+          <option>M. Sc.</option>
+      </optgroup>
+  </select>
+  <input type="text" name="college" placeholder="College Name" />
+  <br>
+  <input type="text" name="graduation_year"  placeholder="Year of graduation" min="2010" max="2022" />
+  <input type="text" name="percentage"  placeholder="Percentage" min="0" max="100" step="0.1" />
+  <h4 >Upload Resume: </h4>
+  <input type="file" />  
+</div>
+<hr>
+<h3>Course Enroll</h3>
+<div class="container3">
+  <h4>Which level do you want to enroll ?</h4>
+  <input type="radio" name="course_type" /><span>Fundamentals</span>
+  &emsp;&emsp;
+  <input type="radio" name="course_type" /><span>Advanced</span>
+  <br>
+  <h4>Which course do you want to enroll ?</h4>
+  <input type="checkbox"  name="course_name" /><span>Web</span>
+  &emsp;&emsp;
+  <input type="checkbox"  name="course_name" /><span>Java</span>
+  &emsp;&emsp;
+  <input type="checkbox"  name="course_name" /><span>DSA</span>
+</div>
+<hr>
+<div class="container4">
+  <input type="submit" value="Apply for Admission" />
+  <input type="reset" />
+</div>
+</form>
+    
+      </body>
+</html>
