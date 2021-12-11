@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@400;500;600&family=Smooch&display=swap');
+body{
+    background:#0F2C67;
+}
+table,th,td{
+    border: none;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+tr:nth-child(odd){
+    background-image: linear-gradient(120deg,#bdf2dc,#f2bdd4);
+    color: #113CFC;
+    text-transform: capitalize;
+}
+tr:nth-child(even){
+    background-image: linear-gradient(45deg,#9cf28f,#f7ec4d);
+    text-transform: capitalize;
+    color: rgb(241, 43, 135);
+}
+th{
+    color:rgb(240, 36, 36);
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+    text-transform: uppercase;
+    background-image: linear-gradient(45deg,#9cf28f,#f7ec4d);
+    background-repeat: no-repeat;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    color: #4BC87F;
+}
+table{
+    width: 600px;
+    height: 400px;
+}
