@@ -1,0 +1,14 @@
+div{
+    margin-left:80vh ;
+}
+h1{
+    text-align: center;
+}
+button{
+    height: 6vh;
+}
+input{
+    height: 5vh;
+    text-align: center;
+    text-transform: capitalize;
+}

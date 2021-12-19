@@ -1,0 +1,46 @@
+table,td,th{
+    border:none;
+    border-collapse: collapse;
+    width: 40vw;
+    height: 5vh;
+    text-align: center;
+}
+th{
+    color: rgb(230, 221, 238);
+    font-size: 2vw;
+}
+td{
+    font-size: 30px;
+    color: mintcream;
+}
+h1{
+    text-align: center;
+    margin-top: 15vh;
+    font-size: 3vw;
+    color: oldlace;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#buttons{
+    margin-top: 2vh;
+    display: flex;
+    justify-content: center;
+}
+button{
+    margin: 4vh;
+    width: 7vw;
+    height: 5vh;
+    background: none;
+    border-radius: 20px;
+    border: none;
+    font-size: 4vh;
+    color: rgb(54, 250, 250);
+}
+body{
+    background-image: url(img1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}

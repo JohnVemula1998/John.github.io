@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anagram</title>
+</head>
+<body>
+    <h1>Anagram</h1>
+    <input type="text" value="" placeholder="Enter String1" id="str1">
+    <br>
+    <input type="text" value="" placeholder="Enter String2" id="str2">
+    <br>
+    <button id="btn">Check</button>
+    <p id="oup"></p>
+    <script>
+        let string1 = document.getElementById('str1');
+        let string2 = document.getElementById('str2'); 
+        let btn = document.getElementById('btn');
+        let output = document.getElementById('oup');
+        btn.addEventListener('click',isAnagram);
+        function isAnagram(){
+            let str1 = string1.value;
+            let str2 = string2.value;
+            let arr1 = str1.split('');        
+            let arr2 = str2.split('');
+            if(arr1.sort().join('')==arr2.sort().join('')){
+                output.innerText = "Two Strings are Anagrams"
+            }else{
+                output.innerText = "Two Strings are not Anagrams"
+            }
+    
+        }
+    </script>
+</body>
+</html>
