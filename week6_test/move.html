@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>JavaScript - Move Object with Arrow Keys using JavaScript Function.</title>
+        <style>
+            div{
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                background-color: aqua;
+            }
+        </style>
+    </head>
+
+    <body onkeydown="getKeyAndMove(event)">
+        <h1>JavaScript - Move Object with Arrow Keys using JavaScript Function.</h1>
+        <h2>Use Arrow keys to move object left, top, right and down.</h2>
+        
+        <div id="obj"></div>
+
+
+        <script type="text/javascript">
+            //init object globally
+            var obj = null;
+            function init() {
+                obj = document.getElementById("obj");
+                obj.style.position = "relative";
+                obj.style.left = "0px";
+                obj.style.top = "0px";
+            }
+            function getKeyAndMove(e) {
+                var key_code = e.which || e.keyCode;
+                switch (key_code) {
+                    case 37: //left arrow key
+                        moveLeft();
+                        break;
+                    case 38: //Up arrow key
+                        moveUp();
+                        break;
+                    case 39: //right arrow key
+                        moveRight();
+                        break;
+                    case 40: //down arrow key
+                        moveDown();
+                        break;
+                }
+            }
+            function moveLeft() {
+                obj.style.left = parseInt(obj.style.left) - 5 + "px";
+            }
+            function moveUp() {
+                obj.style.top = parseInt(obj.style.top) - 5 + "px";
+            }
+            function moveRight() {
+                obj.style.left = parseInt(obj.style.left) + 5 + "px";
+            }
+            function moveDown() {
+                obj.style.top = parseInt(obj.style.top) + 5 + "px";
+            }
+            window.onload = init;
+        </script>
+    </body>
+</html>
